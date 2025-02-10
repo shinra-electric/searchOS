@@ -20,6 +20,8 @@ I added in a swipe action to favourite an OS. There is no need for swipe to dele
 
 The background images and icons will change with the system setting from Mojave onwards. The material effect will also change, along with the accent colour of the navigation. 
 
-![](media/pic1.png)
-![](media/pic2.png)
-![](media/pic3.png)
+<p align="center">
+<img src="./media/pic1.png" width="300" />
+<img src="./media/pic2.png" width="300" />
+<img src="./media/pic3.png" width="300" />
+</p>
