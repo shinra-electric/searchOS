@@ -37,8 +37,6 @@ struct OSRow: View {
     }
 }
 
-struct OSRow_Previews: PreviewProvider {
-    static var previews: some View {
-        OSRow(os: example, isFavorite: true)
-    }
+#Preview {
+    OSRow(os: example, isFavorite: true)
 }

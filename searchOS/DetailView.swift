@@ -83,11 +83,15 @@ struct DetailView: View {
     }
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        let modelData = ModelData()
-//
-//        DetailView(os: example, favorites: Binding<modelData.favorites>)
-//            .environmentObject(ModelData())
-//    }
-//}
+#Preview {
+    struct DetailPreviewHost: View {
+        @State private var favorites = Set<MacOSModel>()
+        private let modelData = ModelData()
+
+        var body: some View {
+            DetailView(os: example, favorites: $favorites)
+                .environmentObject(modelData)
+        }
+    }
+    return DetailPreviewHost()
+}
