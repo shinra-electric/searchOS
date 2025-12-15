@@ -33,15 +33,11 @@ final class ModelData: ObservableObject {
     }
     
     var searchResults: [MacOSModel] {
-        get {
-            if searchText.isEmpty {
-                return filteredOS
-            } else {
-                return filteredOS.filter { $0.codename.range(of: searchText, options: .caseInsensitive) != nil }
-            }
+        let trimmed = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return filteredOS }
+        return filteredOS.filter { os in
+            os.codename.localizedCaseInsensitiveContains(trimmed)
         }
-        // Computed properties need to have a Set value, or else can't be passed into a ForEach loop
-        set {  }
     }
     
     @AppStorage("favoriteIDsData") private var favoriteIDsData: Data = Data()
