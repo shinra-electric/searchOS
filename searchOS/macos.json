@@ -162,7 +162,7 @@
             {
   "codename": "Big Sur",
   "id": "11",
-  "latestVersion": "11.5.2",
+  "latestVersion": "11.7.10",
   "releaseDate": "2020",
   "icon": "big_sur",
   "background": "big_sur_background",
@@ -172,10 +172,50 @@
             {
   "codename": "Monterey",
   "id": "12",
-  "latestVersion": "12.0 Beta 5",
+  "latestVersion": "12.7.6",
   "releaseDate": "2021",
   "icon": "monterey",
   "background": "monterey_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-bit"
+    },
+            {
+  "codename": "Ventura",
+  "id": "13",
+  "latestVersion": "13.7.8",
+  "releaseDate": "2022",
+  "icon": "ventura",
+  "background": "ventura_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-bit"
+    },
+            {
+  "codename": "Sonoma",
+  "id": "14",
+  "latestVersion": "14.8.3",
+  "releaseDate": "2023",
+  "icon": "sonoma",
+  "background": "sonoma_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-bit"
+    },
+            {
+  "codename": "Sequoia",
+  "id": "15",
+  "latestVersion": "15.7.3",
+  "releaseDate": "2024",
+  "icon": "sequoia",
+  "background": "sequoia_background",
+  "architecture": "Intel/ARM",
+  "applications": "64-bit"
+    },
+            {
+  "codename": "Tahoe",
+  "id": "26",
+  "latestVersion": "26.2",
+  "releaseDate": "2025",
+  "icon": "tahoe",
+  "background": "tahoe_background",
   "architecture": "Intel/ARM",
   "applications": "64-bit"
     }
